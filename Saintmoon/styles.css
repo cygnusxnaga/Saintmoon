@@ -1,0 +1,183 @@
+/******{ *General}**********************************************************************/
+* {
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+/******{ *General}**********************************************************************/
+
+/******{ body }**********************************************************************/
+html, body {
+  overflow-x:hidden;
+  position: relative;
+  background-color:rgb(241, 245, 220);
+
+}
+
+/******{ body }**********************************************************************/
+
+/******{ nav }**********************************************************************/
+
+nav {
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    min-height: 10vh;
+    font-family: 'italy';
+    background-color:white;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  .WordMark {
+    color: #050505;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: robo;
+  }
+  .WordMark a {
+    color: black;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+   margin-left: 20%;
+   
+    
+  }
+  .nav-links a{
+    color: #030303;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-family: robo;
+    margin-right:30px ;
+  }
+  .nav-links a:hover{
+    
+    padding-bottom: 5%;
+    font-size: 120%;
+    transition: .8s;
+  }
+  .burger {
+    display: none;
+  }
+  
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color:rgb(2, 2, 2);
+    margin: 5px;
+    transition: all 0.3s ease-in;
+  }
+  
+
+/******{ nav media }**********************************************************************/
+@media (max-width: 952px){
+    .nav-links {
+     width: 60%;
+    }
+  }
+  
+  @media (max-width: 858px){
+     body{
+         overflow-x: hidden;
+     }
+     .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 90%;
+        top: 11.5vh;
+        background-color: rgb(7, 7, 7);
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+        text-align: right;
+        background-image: linear-gradient(rgba(0,0,0,0.0),
+        rgba(0,0,0,.6)),  url(./content/menu1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .nav-links li{
+        opacity: 1;
+        padding-bottom: 1%;
+        text-align: right;
+        margin-right: 25px;
+        
+       }
+       .burger {
+        display: block;
+       }
+       .nav-links a{
+        color: #020202;
+        padding-bottom: 5%;
+        font-size: 20px
+      }
+     
+        
+  }
+  
+  .nav-active {
+     transform: translateX(0%);
+     position: fixed;
+    }
+    .body { 
+      position: fixed;
+    }
+  /******{nav animations }**********************************************************************/
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+  
+    }
+  }
+  
+  .toggle .line1{    
+  transform: rotate(-45deg) translate(-5px, 6px);
+  
+  }
+  .toggle .line2{    
+  opacity: 0;
+  }
+  .toggle .line3{    
+  transform: rotate(45deg) translate(-5px, -6px);
+  }
+  /******{ nav animations}**********************************************************************/
+ 
+
+/******{ nav media }**********************************************************************/
+/******{ nav  }**********************************************************************/
+
+/******{ intro}**********************************************************************/
+/******{ intro}**********************************************************************/
+
+
+/******{ Content }**********************************************************************/
+/******{ Content }**********************************************************************/
+
+/******{Responsive-Media}**********************************************************************/
+/******{Responsive-Media}**********************************************************************/
+
+
+
+/******{animations }**********************************************************************/
+/******{animations}**********************************************************************/
+
+/******{text-animation  }**********************************************************************/
+/******{text-animation}**********************************************************************/
+
